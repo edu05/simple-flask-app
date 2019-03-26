@@ -1,7 +1,7 @@
 from flask import Flask
 import logging
 
-app = Flask(__name__)
+flask_app = Flask(__name__)
 
 #CONFIGURING LOGGING
 logger = logging.getLogger('my_logger')
@@ -13,14 +13,14 @@ ch.setLevel(logging.DEBUG)
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 
-fh = logging.FileHandler('mylogs.log')
+fh = logging.FileHandler('application_logs.log')
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
 
 
-@app.route('/')
+@flask_app.route('/')
 def homepage():
     return "Hello World"
 
@@ -28,5 +28,5 @@ def homepage():
 logger.info('STARTING APP, TRY IT OUT!!!')
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+    flask_app.run(debug=True, use_reloader=True)
 
