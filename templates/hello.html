@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>My Flask App Page</title>
+	</head>
+
+	<body>
+		{% if name %}
+			<p>Hello {{name}}!</p>
+		{% else %}
+			<p>Hello anonymous person!</p>
+		{% endif %}
+			<p>Let's keep in touch</p>
+		<div id="contact-form">
+			<form method="post" action="/signup">
+				<label for="email">Email address</label>
+				<input type="email" id="email" name="email" required="required">
+				<input type="submit" value="submit" id="submit-button">
+			</form>
+		</div>
+	</body>
+</html>
