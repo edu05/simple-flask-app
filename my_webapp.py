@@ -18,6 +18,9 @@ fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
+@app.route("/<name>")
+def hello_someone(name):
+return render_template("hello.html", name=name.title())
 
 
 @flask_app.route('/')
