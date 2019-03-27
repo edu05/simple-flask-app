@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 import logging
 
 flask_app = Flask(__name__)
@@ -18,10 +18,9 @@ fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-@app.route("/<name>")
+@flask_app.route("/<name>")
 def hello_someone(name):
-return render_template("hello.html", name=name.title())
-
+	return render_template("hello.html", name=name.title())
 
 @flask_app.route('/')
 def homepage():
