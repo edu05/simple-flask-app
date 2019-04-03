@@ -20,7 +20,7 @@ logger.addHandler(fh)
 
 @flask_app.route('/')
 def homepage():
-    return "Hello World"
+    return render_template("Homepage.html")
 
 @flask_app.route("/<name>")
 def hello_someone(name):
