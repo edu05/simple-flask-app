@@ -1,0 +1,48 @@
+.circle-menu li {
+  list-style: none;
+  display: inline;
+}
+
+.circle-menu {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    border: solid 5px #cccccc;
+    border-radius: 50%;
+    margin: 5em auto 5em;
+}
+.circle-menu a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8em; height: 8em;
+  line-height:8em;
+  margin: -3.5em;
+  -moz-border-radius: 4em;
+  -webkit-border-radius: 4em;
+  border-radius: 4em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-style: bold;
+  box-sizing: border-box;
+}
+
+.circle-menu a.inspiration {background:#009cde;}
+.circle-menu a.work_experience {background:#3a913f;}
+.circle-menu a.training {background:#fecd06;}
+.circle-menu a.jobs {background:#fa7f00;}
+.circle-menu a.advice {background:#ed2124;}
+.circle-menu a.motivation {background:#932683;}
+.circle-menu a.about_us {background:#203864;}
+
+
+
+.circle-menu .inspiration { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
+.circle-menu .work_experience { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
+.circle-menu .training { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
+.circle-menu .jobs { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
+.circle-menu .advice { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
+.circle-menu .motivation { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
+.circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
