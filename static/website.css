@@ -38,7 +38,6 @@
 .circle-menu a.about_us {background:#203864;}
 
 
-
 .circle-menu .inspiration { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
 .circle-menu .work_experience { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
 .circle-menu .training { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
