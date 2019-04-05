@@ -45,6 +45,20 @@
 .circle-menu .motivation { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
 .circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
 
+.circle-menu-inspiration li {
+  list-style: none;
+  display: inline;
+}
+
+.circle-menu-inspiration {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  border: solid 5px #cccccc;
+  border-radius: 50%;
+  margin: 50em auto 50em;
+}
+
 .circle-menu-inspiration a {
   display: block;
   position: absolute;
