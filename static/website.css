@@ -45,7 +45,7 @@
 .circle-menu .motivation { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
 .circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
 
-.circle-menu b {
+.circle-menu a {
   display: block;
   position: absolute;
   top: 50%;
@@ -63,13 +63,13 @@
   box-sizing: border-box;
 }
 
-.circle-menu b.tate_lates {background:#203864;}
-.circle-menu b.Walthamstow_Garden_Party {background:#203864;}
-.circle-menu b.Great_Get_Together {background: #203864;}
-.circle-menu b.Art_Night {background: #203864;}
-.cirlce-menu b.VA_Friday_Late {background: #203864;}
-.circle-menu b.Black_Girl_fest {background: #203864;}
-.circle-menu b.about_us {background: #203864;}
+.circle-menu a.tate_lates {background:#203864;}
+.circle-menu a.Walthamstow_Garden_Party {background:#203864;}
+.circle-menu a.Great_Get_Together {background: #203864;}
+.circle-menu a.Art_Night {background: #203864;}
+.cirlce-menu a.VA_Friday_Late {background: #203864;}
+.circle-menu a.Black_Girl_fest {background: #203864;}
+.circle-menu a.about_us {background: #203864;}
 
 .circle-menu .tate_lates { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
 .circle-menu .Walthamstow_Garden_Party { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
