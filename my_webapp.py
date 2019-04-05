@@ -22,7 +22,7 @@ logger.addHandler(fh)
 def homepage():
     return render_template("Homepage.html")
 
-@flask_app.route('/inspiration')
+@flask_app.route('/inspiration.html')
 def inspiration():
     return render_template("inspiration.html")
 
