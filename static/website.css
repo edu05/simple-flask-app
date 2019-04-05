@@ -45,7 +45,7 @@
 .circle-menu .motivation { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
 .circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
 
-.circle-menu b {
+.circle-menu-inspiration a {
   display: block;
   position: absolute;
   top: 50%;
@@ -63,18 +63,18 @@
   box-sizing: border-box;
 }
 
-.circle-menu b.tate_lates {background:#203864;}
-.circle-menu b.Walthamstow_Garden_Party {background:#203864;}
-.circle-menu b.Great_Get_Together {background: #203864;}
-.circle-menu b.Art_Night {background: #203864;}
-.cirlce-menu b.VA_Friday_Late {background: #203864;}
-.circle-menu b.Black_Girl_fest {background: #203864;}
-.circle-menu b.about_us {background: #203864;}
+.circle-menu-inspiration a.tate_lates {background:#203864;}
+.circle-menu-inspiration a.Walthamstow_Garden_Party {background:#203864;}
+.circle-menu-inspiration a.Great_Get_Together {background: #203864;}
+.circle-menu-inspiration a.Art_Night {background: #203864;}
+.cirlce-menu-inspiration a.VA_Friday_Late {background: #203864;}
+.circle-menu-inspiration a.Black_Girl_fest {background: #203864;}
+.circle-menu-inspiration a.about_us {background: #203864;}
 
-.circle-menu .tate_lates { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
-.circle-menu .Walthamstow_Garden_Party { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
-.circle-menu .Great_Get_Together { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
-.circle-menu .Art_Night { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
-.circle-menu .VA_Friday_Late { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
-.circle-menu .Black_Girl_fest { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
-.circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
+.circle-menu-inspiration .tate_lates { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
+.circle-menu-inspiration .Walthamstow_Garden_Party { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
+.circle-menu-inspiration .Great_Get_Together { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
+.circle-menu-inspiration .Art_Night { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
+.circle-menu-inspiration .VA_Friday_Late { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
+.circle-menu-inspiration .Black_Girl_fest { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
+.circle-menu-inspiration .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
