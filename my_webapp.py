@@ -22,9 +22,9 @@ logger.addHandler(fh)
 def homepage():
     return render_template("Homepage.html")
 
-@flask_app.route('/')
+@flask_app.route('/inspiration')
 def inspiration():
-    return render_template("inspiration.html")    
+    return render_template("inspiration.html")
 
 @flask_app.route("/<name>")
 def hello_someone(name):
