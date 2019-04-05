@@ -30,51 +30,29 @@
 }
 
 .circle-menu a.inspiration {background:#009cde;}
+.circle-menu a.tate_lates {background:#009cde;}
 .circle-menu a.work_experience {background:#3a913f;}
+.circle-menu a.Walthamstow_Garden_Party {background:#3a913f;}
 .circle-menu a.training {background:#fecd06;}
+.circle-menu a.Great_Get_Together {background: #fecd06;}
 .circle-menu a.jobs {background:#fa7f00;}
+.circle-menu a.Art_Night {background: #fa7f00;}
 .circle-menu a.advice {background:#ed2124;}
+.cirlce-menu a.VA_Friday_Late {background: #ed2124;}
 .circle-menu a.motivation {background:#932683;}
+.circle-menu a.Black_Girl_fest {background: #203864;}
 .circle-menu a.about_us {background:#203864;}
 
 .circle-menu .inspiration { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
-.circle-menu .work_experience { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
-.circle-menu .training { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
-.circle-menu .jobs { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
-.circle-menu .advice { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
-.circle-menu .motivation { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
-.circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
-
-.circle-menu b {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 8em; height: 8em;
-  line-height:8em;
-  margin: -3.5em;
-  -moz-border-radius: 4em;
-  -webkit-border-radius: 4em;
-  border-radius: 4em;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-style: bold;
-  box-sizing: border-box;
-}
-
-.circle-menu b.tate_lates {background:#203864;}
-.circle-menu b.Walthamstow_Garden_Party {background:#203864;}
-.circle-menu b.Great_Get_Together {background: #203864;}
-.circle-menu b.Art_Night {background: #203864;}
-.cirlce-menu b.VA_Friday_Late {background: #203864;}
-.circle-menu b.Black_Girl_fest {background: #203864;}
-.circle-menu b.about_us {background: #203864;}
-
 .circle-menu .tate_lates { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
+.circle-menu .work_experience { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
 .circle-menu .Walthamstow_Garden_Party { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
+.circle-menu .training { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
 .circle-menu .Great_Get_Together { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
+.circle-menu .jobs { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
 .circle-menu .Art_Night { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
+.circle-menu .advice { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
 .circle-menu .VA_Friday_Late { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
+.circle-menu .motivation { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
 .circle-menu .Black_Girl_fest { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
 .circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
