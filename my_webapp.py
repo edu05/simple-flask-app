@@ -26,7 +26,7 @@ def homepage():
 def inspiration():
     return render_template("inspiration.html")
 
-@flask_app.route(/'about_us.html')
+@flask_app.route('/about_us.html')
 def about_us():
     return render_template("about_us.html")
 
