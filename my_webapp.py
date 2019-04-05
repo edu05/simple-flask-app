@@ -26,13 +26,13 @@ def homepage():
 def inspiration():
     return render_template("inspiration.html")
 
-@flask_app.route(/"about_us.html")
+@flask_app.route(/'about_us.html')
 def about_us():
     return render_template("about_us.html")
 
 @flask_app.route(/"jobs.html")
 def jobs():
-    return render_template("jobs.html")    
+    return render_template("jobs.html")
 
 @flask_app.route("/<name>")
 def hello_someone(name):
