@@ -1,1 +1,41 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+
+  <div class="circle-menu">
+      <link rel=stylesheet type=text/css href="{{ url_for('static', filename='website.css') }}">
+      <link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'/>
+  <style>
+    body {  font-family: 'Cutive Mono'; font-size: 20px;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="signup">
+  <div class="container">
+
+      <h1> Subscribe for updates! </h1>
+      <form id="contactForm">
+        Email address:<br>
+        <input type="text" placeholder="Email address"><br>
+        <input type="radio" name="reason" value="Interests" checked> Interests<br>
+        <input type="radio" name"reason" value="Submission"> I want to add an opportunity not listed on the site<br>
+        <textarea rows="4" cols="50" placeholder="Any other information type here :)" name="details"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <script>
+      document.getElementById("contactForm").onsubmit = function() {myFunction()};
+      function myFunction() {
+          alert("Please check your inbox for your confirmation email!");
+      }
+      </script>
+
+
+
+</body>
+
+</html>

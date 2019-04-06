@@ -72,3 +72,8 @@
 .circle-menu .arts_professional { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
 .circle-menu .guardian_jobs { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
 .circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
+
+
+.container {
+  
+}
