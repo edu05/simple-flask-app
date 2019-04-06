@@ -43,7 +43,13 @@
 .cirlce-menu a.VA_Friday_Late {background: #203864;}
 .circle-menu a.Black_Girl_fest {background: #203864;}
 .circle-menu a.about_us {background: #203864;}
-
+.circle-menu a.create_jobs {background:#203864;}
+.circle-menu a.create_access {background:#203864;}
+.circle-menu a.creative_choices {background: #203864;}
+.circle-menu a.arts_jobs {background: #203864;}
+.cirlce-menu a.arts_professional {background: #203864;}
+.circle-menu a.guardian_jobs {background: #203864;}
+.circle-menu a.about_us {background: #203864;}
 
 .circle-menu .inspiration { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
 .circle-menu .work_experience { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
@@ -58,4 +64,11 @@
 .circle-menu .Art_Night { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
 .circle-menu .VA_Friday_Late { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
 .circle-menu .Black_Girl_fest { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
+.circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
+.circle-menu .create_jobs { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
+.circle-menu .create_access { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
+.circle-menu .creative_choices { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
+.circle-menu .arts_jobs { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
+.circle-menu .arts_professional { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
+.circle-menu .guardian_jobs { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
 .circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
