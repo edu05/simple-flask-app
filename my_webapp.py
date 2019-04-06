@@ -18,13 +18,13 @@ fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-@flask_app.route("/<name>")
-def hello_someone(name):
-	return render_template("hello.html", name=name.title())
-
 @flask_app.route('/')
 def homepage():
-    return "Hello World"
+    return render_template("index.html")
+
+@flask_app.route('/about')
+def aboutpage():
+    return render_template("about.html")
 
 
 logger.info('STARTING APP, TRY IT OUT!!!')
