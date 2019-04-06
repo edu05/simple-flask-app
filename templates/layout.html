@@ -3,10 +3,17 @@
 
    <head>
      <title>{% block title %} Find Your Favourite Study Space {% endblock %}</title>
-     <link rel="stylesheet" href="/static/main.css">
+     <link rel="stylesheet" type="text/css" href="/static/main.css">
   </head>
 
   <body>
+    <div class="navbar">
+  <ul>
+    <li><a rel="noopener noreferrer" href="index.html">Home</a></li>
+    <li><a rel="noopener noreferrer" href="">Find your study spot</a></li>
+    <li><a rel="noopener noreferrer" href="Tour2.html">Study space of the week</a></li>
+  </ul>
+</div>
        {% block content %} something something {% endblock %}
   </body>
 </html>
