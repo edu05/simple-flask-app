@@ -58,7 +58,7 @@ def send_simple_message():
         auth=("api", api_key),
         data={
             "from": "{0} <{0}@{1}>".format(sender[1], domain_name),
-            "to": ["{0}"].format(email_address),
+            "to": recipient,
             "subject": "Thanks for signing up!",
             "text": "Thanks for signing up to Creative Aspirations! We'll be sure to keep you updated according to your preferences."
             }
