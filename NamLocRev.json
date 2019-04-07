@@ -1,36 +1,74 @@
 [
  {
    "name":"British Library",
+   "description":"The best library in the country",
+   "photo_url":"",
    "position": [
      51.5300,
      0.1277
    ],
    "review": [
-     "Nice place!",
-     "Great place!"
+     {
+       "text": "Nice place!",
+       "author": "Paul",
+       "mark": 4
+     },
+     {
+       "text": "Great place!",
+       "author": "Cindy",
+       "mark": 5
+     }
    ]
  },
  {
    "name":"Southbank Centre",
+   "description":"exhibitions every day",
+   "photo_url":"",
    "position": [
      51.5061,
      0.1163
    ],
    "review": [
-     "Good location!",
-     "Wonderful place!",
-     "Creative people"
+     {
+       "text": "Good location!",
+       "author": "Paul",
+       "mark": 4
+     },
+     {
+       "text": "Wonderful place!!",
+       "author": "Cindy",
+       "mark": 5
+     },
+     {
+       "text": "Creative people",
+       "author": "Mark",
+       "mark": 3
+     }
    ]
  },
  {
-   "name":"Pret A Manger",
+   "name":"BFI Southbank",
+   "description":"the British film institute",
+   "photo_url":"",
    "position": [
-  51.510002, -0.086433
+  51.5067297,-0.1175046
    ],
    "review": [
-     "Quiet place!",
-     "Great location!",
-     "Nice people"
+     {
+       "text": "Good location!",
+       "author": "Pierre",
+       "mark": 4
+     },
+     {
+       "text": "not that great",
+       "author": "Kevin",
+       "mark": 2
+     },
+     {
+       "text": "Creative people",
+       "author": "Kathy",
+       "mark": 5
+     }
    ]
  }
 ]

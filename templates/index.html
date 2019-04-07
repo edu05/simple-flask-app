@@ -4,17 +4,69 @@
 
 {% block content %}
 
-     {% if name %}
-        <p>Hello {{name}}!</p>
-     {% else %}
-        <p>Hello anonymous person!</p>
-     {% endif %}
-        <p>Let's keep in touch</p>
-     <div id="contact-form">
-        <form method="post" action="/signup">
-           <label for="email">Email address:</label>
-           <input type="email" id="email" name="email" required="required">
-           <input type="submit" value="submit" id="submit-button">
-        </form>
-     </div>
+  <script>
+
+  var allLocations = {{ locations | safe }}  ;
+
+    function setValues() {
+      const selector = document.getElementById("locationSelect");
+      const locationJsonInfo = allLocations[selector.selectedIndex];
+      document.getElementById("locationTitle").innerHTML = locationJsonInfo.name;
+      document.getElementById("locationDescription").innerHTML = locationJsonInfo.description;
+    }
+
+    function selectedLocation() {
+      const selector = document.getElementById("locationSelect");
+      console.log("selected stuff: "+selector.selectedIndex+" "+selector.value);
+      const location =  selector.value
+      const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyDnB3tMLA1yXIx_lRB4G0A3EOPHSA-yga0`
+      fetch(url)
+        .then(res => {
+          return res.json()
+        })
+        .then(response => {
+          const location = response.results[0]
+
+          const mapSrc = `https://www.google.com/maps/embed/v1/place?q=place_id:${location.place_id}&key=AIzaSyDnB3tMLA1yXIx_lRB4G0A3EOPHSA-yga0`
+          document.getElementById('map').src = mapSrc
+
+          //update from our data only, not google api which is only used for the map
+          setValues();
+        })
+        .catch(console.log)
+    }
+
+  </script>
+
+
+
+  <select id="locationSelect" onchange="selectedLocation()">
+    {% for location in locations %}
+      <option>{{location['name']}}</option>
+    {% endfor %}
+  </select>
+
+<div>
+    <iframe
+      id="map"
+      width="600"
+      height="450"
+      frameborder="0"
+      style="border:0"
+      src=""
+      allowfullscreen
+    ></iframe>
+</div>
+
+
+<br><br>
+      <label id="locationTitle">title</label>
+<br><br>
+      <label id="locationDescription">description</label>
+
+
+<script type="text/javascript">
+   selectedLocation();
+</script>
+
 {% endblock %}

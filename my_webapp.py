@@ -19,19 +19,31 @@ fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-@flask_app.route('/')
-def homepage():
-    return render_template("index.html")
+def byteify(input):
+    if isinstance(input, dict):
+        return {byteify(key): byteify(value)
+                for key, value in input.iteritems()}
+    elif isinstance(input, list):
+        return [byteify(element) for element in input]
+    elif isinstance(input, unicode):
+        return input.encode('utf-8')
+    else:
+        return input
 
-@flask_app.route('/locations')
+@flask_app.route('/')
 def location_browser():
     # Read hardcoded locations
     with open('NamLocRev.json') as json_file:
-        locations = json.load(json_file)
-        return render_template("locationBrowser.html", locations=locations)
+        locations = byteify(json.load(json_file))
+        print locations
+        return render_template("index.html", locations=locations)
+
+@flask_app.route('/add-location')
+def add_location():
+    return render_template("add-location.html")
 
 @flask_app.route('/about')
-def aboutpage():
+def about_page():
     return render_template("about.html")
 
 
