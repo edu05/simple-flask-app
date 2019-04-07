@@ -47,17 +47,16 @@ if __name__ == '__main__':
 
 import requests
 
-sender = ["alice", "john", "laura"]
-domain_name = "sandboxb49a93eedf4144a9ac2ed0a12ed78f79.mailgun.org"
-api_key = "e201eb040a4d63c5f95987aa75ae992a-de7062c6-3b003f5d"
-
+sender = ["Creative Aspirations"]
+domain_name = "sandboxf68c8339faad487daa4b0ea47cd2dd94.mailgun.org"
+api_key = ["ba5aa485af", "0b2cea6a33", "42-72dd13eea113", "a224840d-82fc61"]
 def send_simple_message():
     return requests.post(
         "https://api.mailgun.net/v3/{0}/messages".format(domain_name),
-        auth=("api", api_key),
+        auth=("api", api_key).format(api_key[0][::-1]+api_key[1][::-1]+api_key[2][::-1]+api_key[3][::-1])
         data={
             "from": "{0} <{0}@{1}>".format(sender[1], domain_name),
-            "to": ["agarciarod@gmail.com"],
+            "to": ["agarciarod@gmail.com", "sanambalani@gmail.com"],
             "subject": "Thank you for signing up",
             "text": "Thank you for signing up to Creative Aspirations. We look forward to keeping you updated with interesting opportunities and events!"
             }
