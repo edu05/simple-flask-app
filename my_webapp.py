@@ -56,7 +56,7 @@ def send_simple_message():
         auth=("api", api_key).format(api_key[0][::-1]+api_key[1][::-1]+api_key[2][::-1]+api_key[3][::-1])
         data={
             "from": "{0} <{0}@{1}>".format(sender[1], domain_name),
-            "to": ["agarciarod@gmail.com", "sanambalani@gmail.com"],
+            "to": ["agarciarod+mailgun@gmail.com", "sanambalani@gmail.com"],
             "subject": "Thank you for signing up",
             "text": "Thank you for signing up to Creative Aspirations. We look forward to keeping you updated with interesting opportunities and events!"
             }
