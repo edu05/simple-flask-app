@@ -25,10 +25,10 @@ def homepage():
 
 @flask_app.route('/locations')
 def location_browser():
-	# Read hardcoded locations
-	with open('NamLocRev.json') as json_file:
-		locations = json.load(json_file)
-		return render_template("locationBrowser.html", locations=locations)
+    # Read hardcoded locations
+    with open('NamLocRev.json') as json_file:
+        locations = json.load(json_file)
+        return render_template("locationBrowser.html", locations=locations)
 
 @flask_app.route('/about')
 def aboutpage():

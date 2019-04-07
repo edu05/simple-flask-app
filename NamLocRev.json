@@ -1,33 +1,36 @@
-{
-  "British Library": {
-    "position": [
-      51.5300,
-      0.1277
-    ],
-    "review": [
-      "Nice place!",
-      "Great place!"
-    ]
-  },
-  "Southbank Centre": {
-    "position": [
-      51.5061,
-      0.1163
-    ],
-    "review": [
-      "Good location!",
-      "Wonderful place!",
-      "Creative people"
-    ]
-  },
-  "Pret A Manger": {
-    "position": [
-   51.510002, -0.086433
-    ],
-    "review": [
-      "Quiet place!",
-      "Great location!",
-      "Nice people"
-    ]
-  }
-}
+[
+ {
+   "name":"British Library",
+   "position": [
+     51.5300,
+     0.1277
+   ],
+   "review": [
+     "Nice place!",
+     "Great place!"
+   ]
+ },
+ {
+   "name":"Southbank Centre",
+   "position": [
+     51.5061,
+     0.1163
+   ],
+   "review": [
+     "Good location!",
+     "Wonderful place!",
+     "Creative people"
+   ]
+ },
+ {
+   "name":"Pret A Manger",
+   "position": [
+  51.510002, -0.086433
+   ],
+   "review": [
+     "Quiet place!",
+     "Great location!",
+     "Nice people"
+   ]
+ }
+]

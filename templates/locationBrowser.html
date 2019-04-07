@@ -11,7 +11,7 @@
       document.getElementById("locationTitle").innerHTML = location.formatted_address
     }
 
-    function newFunction() {
+    function selectedLocation() {
       const location =  document.getElementById("locationSelect").value
       const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyDnB3tMLA1yXIx_lRB4G0A3EOPHSA-yga0`
       fetch(url)
@@ -27,11 +27,10 @@
           setValues(location)
         })
         .catch(console.log)
-
     }
   </script>
 
-  <select id="locationSelect" onchange="newFunction()">
+  <select id="locationSelect" onchange="selectedLocation()">
     {% for location in locations %}
       <option>{{location['name']}}</option>
     {% endfor %}
