@@ -58,8 +58,8 @@ def send_simple_message():
         data={
             "from": "{0} <{0}@{1}>".format(sender[1], domain_name),
             "to": ["agarciarod@gmail.com"],
-            "subject": "Hi Hello Hey",
-            "text": "Testing some Mailgun awesomness! Hope this works."
+            "subject": "Thank you for signing up",
+            "text": "Thank you for signing up to Creative Aspirations. We look forward to keeping you updated with interesting opportunities and events!"
             }
         )
 
