@@ -53,7 +53,7 @@ api_key = ["ba5aa485af", "0b2cea6a33", "42-72dd13eea113", "a224840d-82fc61"]
 def send_simple_message():
     return requests.post(
         "https://api.mailgun.net/v3/{0}/messages".format(domain_name),
-        auth=("api", api_key).format(api_key[0][::-1]+api_key[1][::-1]+api_key[2][::-1]+api_key[3][::-1]),
+        auth=("api", api_key).format(api_key[0][::-1]+api_key[1][::-1]+api_key[2][::-1]+api_key[3][::-1]), 
         data={
             "from": "{0} <{0}@{1}>".format(sender[1], domain_name),
             "to": ["agarciarod+mailgun@gmail.com", "sanambalani@gmail.com"],
