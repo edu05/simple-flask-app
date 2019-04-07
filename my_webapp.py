@@ -55,7 +55,7 @@ def send_simple_message():
         "https://api.mailgun.net/v3/{0}/messages".format(domain_name),
         auth=("api", api_key[0][::-1]+api_key[1][::-1]+api_key[2][::-1]+api_key[3][::-1]),
         data={
-            "from": "{0} <{0}@{1}>".format(sender[1], domain_name),
+            "from": "{0} <{0}@{1}>".format(sender, domain_name),
             "to": ["agarciarod+mailgun@gmail.com", "sanambalani@gmail.com"],
             "subject": "Thank you for signing up",
             "text": "Thank you for signing up to Creative Aspirations. We look forward to keeping you updated with interesting opportunities and events!"
