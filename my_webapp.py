@@ -1,7 +1,9 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 import logging, json
+from flask_bootstrap import Bootstrap
 
 flask_app = Flask(__name__)
+Bootstrap(flask_app)
 
 #CONFIGURING LOGGING
 logger = logging.getLogger('my_logger')
@@ -17,6 +19,8 @@ fh = logging.FileHandler('application_logs.log')
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
+
+
 
 def byteify(input):
     if isinstance(input, dict):
@@ -44,16 +48,15 @@ def add_location():
         with open('NamLocRev.json') as json_file:
             new_loc = request.form.get('new_location') # loc from client saved onto variable; type: unicode
             new_loc = byteify(new_loc) # type:str
-            location_dict = {'name': new_loc}
-            print location_dict # holds a dict
             json_data = json.load(json_file)
-            print json_data
-            entry = {'name': new_loc, 'description': '', 'photo_url': '', 'position': [], 'review': [{'text': '', 'author': '', 'mark': ''}]}
+            entry = {'name': new_loc, 'description': '', 'photo_url': '', 'position': [], 'review': []}
             json_data.append(entry)
             with open('NamLocRev.json', 'w') as file:
                 file.write(json.dumps(json_data))
-            return render_template("index.html")
+            return redirect(url_for('location_browser'))
     return render_template("add-location.html")
+
+
 
 
 @flask_app.route('/about')
