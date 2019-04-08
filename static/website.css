@@ -33,7 +33,7 @@
 .circle-menu a.work_experience {background:#3a913f;}
 .circle-menu a.training {background:#fecd06;}
 .circle-menu a.jobs {background:#fa7f00;}
-.circle-menu a.advice {background:#ed2124;}
+.circle-menu a.signup {background:#ed2124;}
 .circle-menu a.motivation {background:#932683;}
 .circle-menu a.about_us {background:#203864;}
 .circle-menu a.tate_lates {background:#009cde;}
@@ -56,7 +56,7 @@
 .circle-menu .work_experience { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
 .circle-menu .training { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
 .circle-menu .jobs { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
-.circle-menu .advice { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
+.circle-menu .signup { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
 .circle-menu .motivation { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
 .circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
 .circle-menu .tate_lates { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
