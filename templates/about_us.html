@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
+<body style="background-image:url('/static/pythongirls.jpg');">
 <head>
 
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='website.css') }}">
+<<<<<<< HEAD
 <img src="/static/pythongirls.jpg" alt="PythonGirls" style="width:128px;height:128px;">
+=======
+<!-- <img src="../static/pythongirls.jpg" alt="PythonGirls" style="width:128px;height:128px;"> -->
+>>>>>>> efc032b11c668a3af57be74f170d17d8870e2fdd
 
   <style>
     body {  font-family: 'Cutive Mono'; font-size: 20px;
@@ -26,12 +31,14 @@
         Email address:<br>
         <input type="text" placeholder="First Name"><br>
         <input type="text" placeholder="Last Name"><br>
-        <input type="text" placeholder="Email address"><br>
+        <input type="text" placeholder="Email address" name="email_address"><br>
         <input type="radio" name="reason" value="Interests" checked> Interests<br>
         <input type="radio" name"reason" value="Submission"> I want to add an opportunity not listed on the site<br>
         <textarea rows="4" cols="50" placeholder="Any other information type here :)" name="details"></textarea>
         <br>
-        <input type="submit" value="Submit">
+        <form action="/send" method="post">
+        <input type="submit" value="Submit" name="submit_button">
+
       </form>
 
       <script>
