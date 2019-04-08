@@ -1,6 +1,5 @@
-from flask import Flask, render_template
-import logging
-import json
+from flask import Flask, render_template, request
+import logging, json
 
 flask_app = Flask(__name__)
 
@@ -35,16 +34,33 @@ def location_browser():
     # Read hardcoded locations
     with open('NamLocRev.json') as json_file:
         locations = byteify(json.load(json_file))
-        print locations
+        print type(locations)
         return render_template("index.html", locations=locations)
 
-@flask_app.route('/add-location')
+
+@flask_app.route('/add-location', methods=['POST', 'GET'])
 def add_location():
+    if request.method == 'POST':
+        with open('NamLocRev.json') as json_file:
+            new_loc = request.form.get('new_location') # loc from client saved onto variable; type: unicode
+            new_loc = byteify(new_loc) # type:str
+            location_dict = {'name': new_loc}
+            print location_dict # holds a dict
+            json_data = json.load(json_file)
+            print json_data
+            entry = {'name': new_loc, 'description': '', 'photo_url': '', 'position': [], 'review': [{'text': '', 'author': '', 'mark': ''}]}
+            json_data.append(entry)
+            with open('NamLocRev.json', 'w') as file:
+                file.write(json.dumps(json_data))
+            return render_template("index.html")
     return render_template("add-location.html")
+
 
 @flask_app.route('/about')
 def about_page():
     return render_template("about.html")
+
+
 
 
 logger.info('STARTING APP, TRY IT OUT!!!')

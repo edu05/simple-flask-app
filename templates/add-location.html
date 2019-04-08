@@ -4,17 +4,12 @@
 
 {% block content %}
 
-     {% if name %}
-        <p>Hello {{name}}!</p>
-     {% else %}
-        <p>Hello anonymous person!</p>
-     {% endif %}
-        <p>Let's keep in touch</p>
-     <div id="contact-form">
-        <form method="post" action="/signup">
-           <label for="email">Email address:</label>
-           <input type="email" id="email" name="email" required="required">
-           <input type="submit" value="submit" id="submit-button">
+        <p>Enter the name of the study space</p>
+     <div>
+        <form method="POST">
+           <label></label>
+           <input type="text" id="text" name="new_location" required="required">
+           <input type="submit" id="submit-button">
         </form>
      </div>
 {% endblock %}
