@@ -31,14 +31,20 @@ def byteify(input):
     else:
         return input
 
-@flask_app.route('/')
-def location_browser():
+@flask_app.route('/<location_id>')
+def one_location(location_id):
     # Read hardcoded locations
     with open('NamLocRev.json') as json_file:
-        locations = byteify(json.load(json_file))
-        print type(locations)
-        return render_template("index.html", locations=locations)
+        full_locations = byteify(json.load(json_file))
+        location_names = []
+        for full_location in full_locations:
+            location_names.append(full_location["name"])
+        print full_locations[int(location_id)]
+        return render_template("index.html", location_names=location_names,location=full_locations[int(location_id)])
 
+@flask_app.route('/')
+def index():
+    return redirect("/0")
 
 @flask_app.route('/add-location', methods=['POST', 'GET'])
 def add_location():
@@ -51,8 +57,10 @@ def add_location():
             json_data.append(entry)
             with open('NamLocRev.json', 'w') as file:
                 file.write(json.dumps(json_data))
-            return redirect(url_for('location_browser'))
-    return render_template("add-location.html")
+            return redirect("/"+str(len(json_data)-1))
+    else:
+        return render_template("add-location.html")
+
 
 
 

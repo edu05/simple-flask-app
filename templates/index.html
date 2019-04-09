@@ -8,22 +8,8 @@
     <div class="col-md-6">
 
         <script>
-
-  var allLocations = {{ locations | safe }}  ;
-
-    function setValues() {
-      const selector = document.getElementById("locationSelect");
-      const locationJsonInfo = allLocations[selector.selectedIndex];
-      document.getElementById("locationTitle").innerHTML = locationJsonInfo.name;
-      document.getElementById("locationPhoto").innerHTML = locationJsonInfo.photo_url;
-      document.getElementById("locationDescription").innerHTML = locationJsonInfo.description;
-      document.getElementById("locationReview").innerHTML = JSON.stringify(locationJsonInfo.review);
-    }
-
-    function selectedLocation() {
-      const selector = document.getElementById("locationSelect");
-      console.log("selected stuff: "+selector.selectedIndex+" "+selector.value);
-      const location =  selector.value
+    function loadMap() {
+      const location =  "{{ location["name"] | safe }}";
       const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyDnB3tMLA1yXIx_lRB4G0A3EOPHSA-yga0`
       fetch(url)
         .then(res => {
@@ -31,16 +17,17 @@
         })
         .then(response => {
           const location = response.results[0]
-
           const mapSrc = `https://www.google.com/maps/embed/v1/place?q=place_id:${location.place_id}&key=AIzaSyDnB3tMLA1yXIx_lRB4G0A3EOPHSA-yga0`
           document.getElementById('map').src = mapSrc
-
-          //update from our data only, not google api which is only used for the map
-          setValues();
         })
         .catch(console.log)
     }
 
+    function redirection(){
+        const selector = document.getElementById("locationSelect");
+        const newIndex = selector.selectedIndex;
+        window.location.href = "/"+newIndex;
+    }
 
         </script>
 
@@ -62,9 +49,9 @@
                  <a class="btn btn-warning pull-right" rel="noopener noreferrer" href="add-location" role="button">Add a new location</a>
                 <br><br>
                 <label for="locationSelect"></label>
-                <select class="form-control" id="locationSelect" onchange="selectedLocation()" onmousedown="if(this.options.length>4){this.size=4;}" onblur="this.size=0;">
-                    {% for location in locations %}
-                    <option>{{location['name']}}</option>
+                <select class="form-control" id="locationSelect" onchange="redirection()" onmousedown="if(this.options.length>4){this.size=4;}" onblur="this.size=0;">
+                    {% for location_name in location_names %}
+                    <option>{{location_name}}</option>
                     {% endfor %}
                 </select>
             </div>
@@ -72,10 +59,10 @@
         <div class="row-md-1 line_container"><div class="line"></div></div>
         <div class="row-md-7">
             <br><br>
-                <label id="locationTitle">title</label>
-            <label id="locationDescription">description</label>
-            <label id="locationPhoto">photo</label>
-            <label id="locationReview">photo</label>
+                <label id="locationTitle">{{ location["name"] }}</label><br>
+            <label id="locationDescription">{{ location["description"] }}</label><br>
+            <label id="locationPhoto">photo</label><br>
+            <label id="locationReview">photo</label><br>
         </div>
 
         <div class="row">
@@ -91,8 +78,11 @@
 
     </div>
     <script type="text/javascript">
-   selectedLocation();
-
+        loadMap();
+        var selector = document.getElementById("locationSelect");
+        var url = window.location.href ;
+        var index = url.substr(url.lastIndexOf('/') + 1);
+        selector.selectedIndex = index ;
     </script>
 
     {% endblock %}
