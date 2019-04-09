@@ -4,10 +4,8 @@
 
 {% block content %}
 
-<div class="row">
-    <div class="col-md-6">
 
-        <script>
+<script>
     function loadMap() {
       const location =  "{{ location["name"] | safe }}";
       const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyDnB3tMLA1yXIx_lRB4G0A3EOPHSA-yga0`
@@ -28,12 +26,13 @@
         const newIndex = selector.selectedIndex;
         window.location.href = "/"+newIndex;
     }
+</script>
 
-        </script>
-
+<div class="row">
+    <div class="col-md-6">
         <iframe
                 id="map"
-                width="560"
+                width="540"
                 height="440"
                 frameborder="0"
                 style="border:0"
@@ -42,24 +41,28 @@
         ></iframe>
 
     </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-5">
+
+    <div class="col-md-6">
         <div class="row-md-4">
             <div class="form-group">
-                 <a class="btn btn-warning pull-right" rel="noopener noreferrer" href="add-location" role="button">Add a new location</a>
+                <a class="btn btn-warning pull-right" rel="noopener noreferrer" href="add-location" role="button">Add a
+                    new location</a>
                 <br><br>
                 <label for="locationSelect"></label>
-                <select class="form-control" id="locationSelect" onchange="redirection()" onmousedown="if(this.options.length>4){this.size=4;}" onblur="this.size=0;">
+                <select class="form-control" id="locationSelect" onchange="redirection()"
+                        onmousedown="if(this.options.length>4){this.size=4;}" onblur="this.size=0;">
                     {% for location_name in location_names %}
                     <option>{{location_name}}</option>
                     {% endfor %}
                 </select>
             </div>
         </div>
-        <div class="row-md-1 line_container"><div class="line"></div></div>
+        <div class="row-md-1 line_container">
+            <div class="line"></div>
+        </div>
         <div class="row-md-7">
             <br><br>
-                <label id="locationTitle">{{ location["name"] }}</label><br>
+            <label id="locationTitle">{{ location["name"] }}</label><br>
             <label id="locationDescription">{{ location["description"] }}</label><br>
             <label id="locationPhoto">photo</label><br>
             <label id="locationReview">photo</label><br>
@@ -83,6 +86,7 @@
         var url = window.location.href ;
         var index = url.substr(url.lastIndexOf('/') + 1);
         selector.selectedIndex = index ;
+
     </script>
 
     {% endblock %}
