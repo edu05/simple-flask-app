@@ -1,5 +1,5 @@
 body {
-    background: #C7C7BB;
+    background: white;
 }
 
 ul {
@@ -12,10 +12,15 @@ li {
   display: inline;
 }
 
+option {
+    height: 2em;
+}
+
 .navbar{
-    background-color: #D4C8EB;
+    background-color: #14213D;
     text-align: center;
     color: white;
     font-size: 20px;
     opacity: 50%;
 }
+

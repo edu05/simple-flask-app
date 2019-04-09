@@ -3,17 +3,25 @@
 
    <head>
      <title>{% block title %} Find Your Favourite Study Space {% endblock %}</title>
-     <link rel="stylesheet" type="text/css" href="/static/main.css">
+     <link rel="stylesheet" type="text/css" href="/static/style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="/static/script.js" ></script>
   </head>
 
   <body>
-    <div class="navbar">
+
+  <div class="container">
+  <!-- Content here -->
+
+  <div class="navbar">
   <ul>
-    <li><a rel="noopener noreferrer" href="/">Index</a></li>
-    <li><a rel="noopener noreferrer" href="add-location">Add a new location</a></li>
+    <li><a rel="noopener noreferrer" href="/">Find your favourite study space |</a></li>
     <li><a rel="noopener noreferrer" href="about">About</a></li>
   </ul>
 </div>
-       {% block content %} something something {% endblock %}
+
+
+{% block content %} something for 'super' {% endblock %}
+</div>
   </body>
 </html>

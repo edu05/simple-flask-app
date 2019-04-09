@@ -4,7 +4,10 @@
 
 {% block content %}
 
-  <script>
+<div class="row">
+    <div class="col-md-6">
+
+        <script>
 
   var allLocations = {{ locations | safe }}  ;
 
@@ -12,7 +15,9 @@
       const selector = document.getElementById("locationSelect");
       const locationJsonInfo = allLocations[selector.selectedIndex];
       document.getElementById("locationTitle").innerHTML = locationJsonInfo.name;
+      document.getElementById("locationPhoto").innerHTML = locationJsonInfo.photo_url;
       document.getElementById("locationDescription").innerHTML = locationJsonInfo.description;
+      document.getElementById("locationReview").innerHTML = JSON.stringify(locationJsonInfo.review);
     }
 
     function selectedLocation() {
@@ -36,37 +41,58 @@
         .catch(console.log)
     }
 
-  </script>
+
+        </script>
+
+        <iframe
+                id="map"
+                width="560"
+                height="440"
+                frameborder="0"
+                style="border:0"
+                src=""
+                allowfullscreen
+        ></iframe>
+
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+        <div class="row-md-4">
+            <div class="form-group">
+                 <a class="btn btn-warning pull-right" rel="noopener noreferrer" href="add-location" role="button">Add a new location</a>
+                <br><br>
+                <label for="locationSelect"></label>
+                <select class="form-control" id="locationSelect" onchange="selectedLocation()" onmousedown="if(this.options.length>4){this.size=4;}" onblur="this.size=0;">
+                    {% for location in locations %}
+                    <option>{{location['name']}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="row-md-1 line_container"><div class="line"></div></div>
+        <div class="row-md-7">
+            <br><br>
+                <label id="locationTitle">title</label>
+            <label id="locationDescription">description</label>
+            <label id="locationPhoto">photo</label>
+            <label id="locationReview">photo</label>
+        </div>
+
+        <div class="row">
+            <div class="column-8 column-sm-6">
+
+            </div>
+            <div class="column-4 column-sm-6">
+
+            </div>
 
 
+        </div>
 
-  <select id="locationSelect" onchange="selectedLocation()">
-    {% for location in locations %}
-      <option>{{location['name']}}</option>
-    {% endfor %}
-  </select>
-
-<div>
-    <iframe
-      id="map"
-      width="600"
-      height="450"
-      frameborder="0"
-      style="border:0"
-      src=""
-      allowfullscreen
-    ></iframe>
-</div>
-
-
-<br><br>
-      <label id="locationTitle">title</label>
-<br><br>
-      <label id="locationDescription">description</label>
-
-
-<script type="text/javascript">
+    </div>
+    <script type="text/javascript">
    selectedLocation();
-</script>
 
-{% endblock %}
+    </script>
+
+    {% endblock %}

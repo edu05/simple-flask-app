@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import logging, json
-from flask_bootstrap import Bootstrap
 
 flask_app = Flask(__name__)
-Bootstrap(flask_app)
 
 #CONFIGURING LOGGING
 logger = logging.getLogger('my_logger')
