@@ -75,7 +75,37 @@
 .circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
 .circle-menu .homepage { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
 
+.logo {
+  display:inline-block;
+  vertical-align: top;
+  width:10%;
+  height: 10%;
+  padding: 15px 0 0 15px;
+  float: left;
+}
 
-.container {
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.navbar a {
+  float: left;
+  display: block;
+  color: #fa7f00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:
+}
+
+.navbar a:hover {
+  background: #FFFFFF;
+  color: #fa7f00;
+}
+
+.main {
+  margin-top: 30px;
 }
