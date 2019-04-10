@@ -90,21 +90,20 @@
           <a href="https://www.linkedin.com/in/angela-rose-5038a1120/">Check me out</a>
 
       <h1> Subscribe for updates! </h1>
-      <form id="subscribeForm">
+      <form id="subscribeForm" action="/send" method="post">
         <br>
         <input type="text" placeholder="First Name"><br>
         <input type="text" placeholder="Last Name"><br>
-        <input id="email_id" type="text" placeholder="Email address" name="email_address"><br>
+        <input id="email" type="email" placeholder="Email address" name="email"><br>
         <input type="radio" name="reason" value="Interests" checked> Interests<br>
         <input type="radio" name"reason" value="Submission"> I want to add an opportunity not listed on the site<br>
         <textarea rows="4" cols="50" placeholder="Any other information type here :)" name="details"></textarea>
         <br>
-        <form action="/send" method="post">
-        <input type="submit" value="Submit" name="submit_button">
+        <input type="submit" value="Submit" name="submit-button">
 
       </form>
 
-      <script>
+      <!-- <script>
       document.getElementById("subscribeForm").onsubmit = function() {myFunction()};
       function myFunction() {
           //alert("Please check your inbox for your confirmation email!");
@@ -115,7 +114,7 @@
           var mail_string = 'mailto:' + email + '?subject=subject&body=body';
           window.open(mail_string);
       }
-      </script>
+      </script> -->
       </div>
 
       <ul>
