@@ -151,7 +151,7 @@
 .carousel-inner .item {
     position: absolute;
     width: 50%;
-    height: 50px;
+    height: 50%;
     background-color: #777;
 }
 .carousel-inner > .item > img {

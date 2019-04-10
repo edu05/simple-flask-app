@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
-<body style="background-image:url('/static/pythongirls.jpg');">
-<head>
+<body style="background-image:url('static/pythongirls.jpg');">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='website.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script> src="https://code.jquery.com/jquery-3.2.1.slim.min.js" </script>
+    <script> src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" </script>
+    <script> src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" </script>
+    <link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'/>
+  <style>
+    body {  font-family: 'Cutive Mono'; font-size: 20px; font-style: normal; color: #203864;
+  }
+</style>
+</head>
 
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='website.css') }}">
-<<<<<<< HEAD
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-=======
-<<<<<<< HEAD
+<body>
+  <div class="navbar">
+      <div class="nav">
+      <a href="#about_us">About Us</a>
+      <a href="#inspiration">Inspiration</a>
+      <a href="#work_experience">Work Experience</a>
+      <a href="#training">Training</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#signup">Sign Up</a>
+      <a href="#motivation">Motivation</a>
+    </div>
+  </div>
+
+<head>
 <img src="/static/pythongirls.jpg" alt="PythonGirls" style="width:128px;height:128px;">
 <style>
 .fa {
@@ -28,10 +50,9 @@
 .fa:hover {
     opacity: 0.7;
 }
-=======
->>>>>>> 79ebdf9aebbd03f8e4233379e960ca7ba1d6349f
-<!-- <img src="../static/pythongirls.jpg" alt="PythonGirls" style="width:128px;height:128px;"> -->
->>>>>>> efc032b11c668a3af57be74f170d17d8870e2fdd
+
+<!-- <img src="/static/pythongirls.jpg" alt="PythonGirls" style="width:128px;height:128px;"> -->
+
 
   <style>
     body {  font-family: 'Cutive Mono'; font-size: 20px;
@@ -67,6 +88,10 @@
       <p> Laura Turner-Blake - Creative Visioner:
         "Passionate about working with young people and supporting people to realise their potential is part of the day job. Started coding just for fun! Known for my infectious loud laugh, love of Japanese culture and hanging out in my hammock."</p>
         <a href="https://www.linkedin.com/in/laura-turner-blake-8bbb0b8b">Check me out</a>
+
+      <p> Angela Rose - Ray of sunshine:
+          "Loves to put a creative twist in everything and enjoys a group effort towards something awesome. An enthusiastic and positive ray of sunshine "</p>
+          <a href="https://www.linkedin.com/in/angela-rose-5038a1120/">Check me out</a>
 
       <h1> Subscribe for updates! </h1>
       <form id="subscribeForm">
