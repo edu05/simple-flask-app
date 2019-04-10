@@ -133,6 +133,7 @@
 
 #carousel {
     margin-top: 50px;
+    font-size: 50px;
 }
 
 .carousel {
@@ -145,7 +146,8 @@
 }
 
 .carousel-inner {
-   position: relative
+   position: relative;
+   font-size: 50px;
 }
 
 .carousel-inner .item {

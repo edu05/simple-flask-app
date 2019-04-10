@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='website.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script> src="https://code.jquery.com/jquery-3.2.1.slim.min.js" </script>
-    <script> src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" </script>
-    <script> src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" </script>
     <link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'/>
   <style>
     body {  font-family: 'Cutive Mono'; font-size: 20px; font-style: normal; color: #fa7f00;
@@ -17,7 +14,7 @@
 
 
 <body>
-  <div class="navbar">
+  <div id="navbar" class="navbar">
       <div class="nav">
       <a href="#about_us">About Us</a>
       <a href="#inspiration">Inspiration</a>
@@ -28,7 +25,7 @@
       <a href="#motivation">Motivation</a>
     </div>
   </div>
-
+<!--
 <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -37,7 +34,7 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
 </div>
-</div>
+</div> -->
 
 <div id="carousel" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
@@ -46,28 +43,40 @@
     <li data-target="carousel" data-slide-to="2"></li>
    </ol>
   <div class="carousel-inner">
-    <div class="item">
-     <img src="static/job_background.jpg" alt="Slide 1">
+    <div class="carousel-item active">
+     <img src="static/job_background.jpg" class="d-block w-100" alt="Slide 1">
+     <div class="carousel-caption d-none d-md-block">
+          <h5>Create Jobs</h5>
+          <p><a class="create_jobs" href="https://www.createjobslondon.org/young-creatives">Create Jobs</a></p>
+        </div>
     </div>
-    <div class="item">
-       <img src="static/job_background2.jpg" alt="Slide 2">
+    <div class="carousel-item">
+       <img src="static/job_background2.jpg" class="d-block w-100" alt="Slide 2">
+       <div class="carousel-caption d-none d-md-block">
+       <h6>Arts professionals</h6>
+       	<p><a class="arts_professional" href="http://www.artsjobs.org.uk/arts-jobs-listings/">Arts Professional</a></p>
     </div>
-    <div class="item">
-      <img src="static/job_background3.jpg" alt="Slide 3">
+    <div class="carousel-item">
+      <img src="static/job_background3.jpg" class="d-block w-100" alt="Slide 3">
     </div>
-    </div>
+  </div>
+</div>
+    <!-- </div>
       <a href="#carousel" class="left carousel-control" data-slide="prev">
          <span class="glyphicon glyphicon-chevron-left"></span>
       </a>
       <a href="#carousel" class="right carousel-control" data-slide="next">
          <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
-    </div>
+    </div> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> </script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
 <script>
- $("#carousel").carousel();
+ // $("#carousel").carousel();
 </script>
 
   <script>
@@ -86,23 +95,15 @@ function myFunction() {
 
 </script>
 
-<div>
-	<ul>
-<head>
-		<li><a class="create_jobs" href="https://www.createjobslondon.org/young-creatives">Create Jobs</a></li>
-		<li><a class="create_access" href="https://creativeaccess.org.uk/">Access</a></li>
+
 		<li><a class="creative_choices" href="https://ccskills.org.uk/careers/jobs">Choices</a></li>
-		<li><a class="arts_jobs" href="http://www.artsjobs.org.uk/arts-jobs-listings/">Arts Jobs</a></li>
+    <li><a class="arts_jobs" href="http://www.artsjobs.org.uk/arts-jobs-listings/">Arts Jobs</a></li>
 		<li><a class="arts_professional" href="http://www.artsjobs.org.uk/arts-jobs-listings/">Arts Professional</a></li>
 		<li><a class="guardian_jobs" href="http://jobs.theguardian.com/jobs/">Guardian</a></li>
-    <li><a class="about_us" href="about_us.html">About Us</a></li>
-</head>
-	</ul>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<div>
+    <li><a class="about_us" href="about_us.html">About Us</a></li>
+</div>
 </body>
 
 </html>
