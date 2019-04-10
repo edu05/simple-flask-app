@@ -4,7 +4,6 @@
 <head>
 
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='website.css') }}">
-<<<<<<< HEAD
 <img src="/static/pythongirls.jpg" alt="PythonGirls" style="width:128px;height:128px;">
 <style>
 .fa {
@@ -45,15 +44,15 @@
 
       <h1> Get to know the team! </h1>
 
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- Add font awesome icons -->
+      <a href="#" class="fa fa-Linkedin"></a>
+
       <p> Alicia Garcia Rodriguez - our very own Process Sherpa:
         "I consider myself to be a Python disruptionist, who is seeking technological nirvana. I split my time between living in my yurt and selling my organic yak yoghurts at farmer's markets and ensuring my chakras are balanced, and furiously troubleshooting html and writing bad code with hopes to use my coding skills for good. I would describe myself as: determined, eager, clueless."</p>
         <a href="https://www.linkedin.com/in/vodriguez/">Check me out</a>
-
-        <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <!-- Add font awesome icons -->
-        <a href="#" class="fa fa-Linkedin"></a>
 
       <p> Sanam Balani - the Engagement Tinkerer:
         "A city-loving Financial Associate on the outside, and tech junkie and hipster on the inside - looking to merge my Type A and B personalities into one to do what I do best which is understanding what makes people tick and helping them achieve their goals through connecting with likeminded individuals. Self-described as driven, curious, and emotionally intelligent."</p>
@@ -65,10 +64,10 @@
 
       <h1> Subscribe for updates! </h1>
       <form id="subscribeForm">
-        Email address:<br>
+        <br>
         <input type="text" placeholder="First Name"><br>
         <input type="text" placeholder="Last Name"><br>
-        <input type="text" placeholder="Email address" name="email_address"><br>
+        <input id="email_id" type="text" placeholder="Email address" name="email_address"><br>
         <input type="radio" name="reason" value="Interests" checked> Interests<br>
         <input type="radio" name"reason" value="Submission"> I want to add an opportunity not listed on the site<br>
         <textarea rows="4" cols="50" placeholder="Any other information type here :)" name="details"></textarea>
@@ -81,7 +80,13 @@
       <script>
       document.getElementById("subscribeForm").onsubmit = function() {myFunction()};
       function myFunction() {
-          alert("Please check your inbox for your confirmation email!");
+          //alert("Please check your inbox for your confirmation email!");
+          //mailto:test@example.com?subject=subject&body=body
+
+          var email = document.getElementById("email_id").value;
+          //alert(email);
+          var mail_string = 'mailto:' + email + '?subject=subject&body=body';
+          window.open(mail_string);
       }
       </script>
       </div>
