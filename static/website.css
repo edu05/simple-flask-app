@@ -75,7 +75,94 @@
 .circle-menu .about_us { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
 .circle-menu .homepage { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
 
+.navbar {
+  overflow: hidden;
+  background-color: #fa7f00;
+  position: fixed;
+  top: 0;
+  width: auto;
+  text-decoration: none;
+}
 
-.container {
+.navbar a {
+  float: right;
+  display: block;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
 
+.navbar a:hover {
+  background: #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #fa7f00;
+  position: fixed;
+  top: 0;
+  width: auto;
+  text-decoration: none;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+#carousel {
+    margin-top: 50px;
+}
+
+.carousel {
+    height: 100px;
+    margin-bottom: 60px;
+}
+
+.carousel-caption {
+    z-index: 10;
+}
+
+.carousel-inner {
+   position: relative
+}
+
+.carousel-inner .item {
+    position: absolute;
+    width: 50%;
+    height: 50px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+   max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 200px) {
+    .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 21px;
+            line-height: 1.4;
+    }
 }

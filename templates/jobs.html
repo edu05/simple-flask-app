@@ -1,27 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-<div class="circle-menu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='website.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'/>
-<style>
-  body {  font-family: 'Cutive Mono'; font-size: 20px;
-}
+  <style>
+    body {  font-family: 'Cutive Mono'; font-size: 20px; font-style: normal; color: #fa7f00;
+  }
 </style>
 </head>
+
+
 <body>
+  <div class="navbar">
+      <div class="nav">
+      <a href="#about_us">About Us</a>
+      <a href="#inspiration">Inspiration</a>
+      <a href="#work_experience">Work Experience</a>
+      <a href="#training">Training</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#signup">Sign Up</a>
+      <a href="#motivation">Motivation</a>
+    </div>
+  </div>
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+</div>
+</div>
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+   <ol class="carousel-indicators">
+    <li data-target="carousel" data-slide-to="0"></li>
+    <li data-target="carousel" data-slide-to="1"></li>
+    <li data-target="carousel" data-slide-to="2"></li>
+   </ol>
+  <div class="carousel-inner">
+    <div class="item">
+     <img src="static/job_background.jpg" alt="Slide 1">
+    </div>
+    <div class="item">
+       <img src="static/job_background2.jpg" alt="Slide 2">
+    </div>
+    <div class="item">
+      <img src="static/job_background3.jpg" alt="Slide 3">
+    </div>
+    </div>
+      <a href="#carousel" class="left carousel-control" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a href="#carousel" class="right carousel-control" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="C:\Users\user\Documents\CFG_Python_Spring_2019\final_project\js/bootstrap.min.js"></script>
+<script>
+ $("#carousel").carousel();
+</script>
+
+  <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+<div>
 	<ul>
+<head>
 		<li><a class="create_jobs" href="https://www.createjobslondon.org/young-creatives">Create Jobs</a></li>
-		<li><a class="create_access" href="https://creativeaccess.org.uk/">Creative Access</a></li>
-		<li><a class="creative_choices" href="https://ccskills.org.uk/careers/jobs">Creative Choices</a></li>
+		<li><a class="create_access" href="https://creativeaccess.org.uk/">Access</a></li>
+		<li><a class="creative_choices" href="https://ccskills.org.uk/careers/jobs">Choices</a></li>
 		<li><a class="arts_jobs" href="http://www.artsjobs.org.uk/arts-jobs-listings/">Arts Jobs</a></li>
 		<li><a class="arts_professional" href="http://www.artsjobs.org.uk/arts-jobs-listings/">Arts Professional</a></li>
-		<li><a class="guardian_jobs" href="http://jobs.theguardian.com/jobs/">Guardian Jobs</a></li>
+		<li><a class="guardian_jobs" href="http://jobs.theguardian.com/jobs/">Guardian</a></li>
     <li><a class="about_us" href="about_us.html">About Us</a></li>
+</head>
 	</ul>
 </div>
 
-<img src="{{ url_for('static', filename='LOGO.png') }}" alt="logo" style="position:absolute; TOP: 280px; right: 540px; width:250px;height:140px;">
-</body
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 
 </html>
